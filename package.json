@@ -1,0 +1,16 @@
+{
+  "name": "nextid-oauth-demo-app",
+  "version": "0.0.1",
+  "description": "A NextID OAuth demo app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hanif AR",
+  "license": "ISC",
+  "dependencies": {
+    "client-oauth2": "^4.3.3",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}

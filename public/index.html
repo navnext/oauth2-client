@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NextID OAuth Login Demo App</title>
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+  <style>
+    body { font-family: 'ABeeZee'; }
+  </style>
+</head>
+
+<body>
+  <a id="link"><button>Login with NextID</button></a>
+  <div id="user-info-wrapper">
+    <img width="50" />
+    <p></p><p></p><p></p>
+  </div>
+  <script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('id')) {
+      document.querySelector('#link').style.display = 'none'
+      document.querySelectorAll('p')[0].innerHTML = `Full name: ${urlParams.get('name')}`
+      document.querySelectorAll('p')[1].innerHTML = `Email: ${urlParams.get('email')}`
+      document.querySelectorAll('p')[2].innerHTML = `Username: ${urlParams.get('username')}`
+    } else {
+      document.querySelector('#user-info-wrapper').style.display = 'none'
+    }
+
+    function transferComplete(evt) {
+      console.log(evt);
+    }
+    async function nextidAuth() {
+      document.querySelector('#link').href = `http://localhost:3000/auth/nextid`;
+    }
+    nextidAuth()
+  </script>
+</body>
+</html>
