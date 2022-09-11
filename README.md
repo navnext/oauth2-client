@@ -15,8 +15,6 @@ Apps will run on port 3000: `http://localhost:3000`.
 
 `CLIENT_ID`, `CLIENT_SECRET` and `CLIENT_SCOPES` must be obtained from NextID management UI. To create new client application in NextID management UI, please refer to [the documentation](https://nextid-docs.cloud.nextplatform.ai/identity-admin/applications/create).
 
-![alt text](images/oauth2_settings.png "OAuth Client Settings")
-
 ## Disclaimer
 
 This project is based on [https://github.com/ionelh/google-oauth-demo-app](google-oauth-demo-app) modified to use [client-oauth2](https://www.npmjs.com/package/client-oauth2) package
