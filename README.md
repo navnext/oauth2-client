@@ -1,4 +1,4 @@
-# NextID OAuth2 client demo apps
+# NextID OAuth 2.0 client apps demo
 
 NextID client application demo. Basically a simple OAuth 2.0 client application. The application shows login button which will redirect user to NextID login page when clicked. If the login process was successful, it will the shows basic information about the logged in user. 
 
